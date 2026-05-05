@@ -60,7 +60,7 @@ export default function Authentication() {
         } catch (err) {
 
             console.log(err);
-            let message = (err.response.data.message);
+            let message = err?.response?.data?.message|| "Something went wrong";
             setError(message);
         }
     }

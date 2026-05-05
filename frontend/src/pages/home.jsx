@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import React, { useContext, useState } from 'react'
 import withAuth from '../utils/withAuth'
 import { useNavigate } from 'react-router-dom'
@@ -15,8 +16,12 @@ function HomeComponent() {
 
     const {addToUserHistory} = useContext(AuthContext);
     let handleJoinVideoCall = async () => {
-        await addToUserHistory(meetingCode)
-        navigate(`/${meetingCode}`)
+        if (!meetingCode) {
+            alert("Please enter meeting code!");
+            return;
+        }
+        await addToUserHistory(meetingCode);
+        navigate(`/${meetingCode}`);
     }
 
     return (
@@ -58,8 +63,11 @@ function HomeComponent() {
 
                         <div style={{ display: 'flex', gap: "10px" }}>
 
-                            <TextField onChange={e => setMeetingCode(e.target.value)} id="outlined-basic" label="Meeting Code" variant="outlined" />
+                            <TextField
+                              value={meetingCode}
+                               onChange={e => setMeetingCode(e.target.value)} id="outlined-basic" label="Meeting Code" variant="outlined" />
                             <Button onClick={handleJoinVideoCall} variant='contained'>Join</Button>
+                            <Button onClick={() => setMeetingCode(uuidv4())} variant='outlined'>Generate New Code</Button>
 
                         </div>
                     </div>
