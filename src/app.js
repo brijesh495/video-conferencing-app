@@ -23,6 +23,10 @@ app.use(express.urlencoded({ limit: "40kb", extended: true }));
 
 // Routes
 app.use("/api/v1/users", userRoutes);
+//Root route
+app.get("/", (req, res) => {
+  res.send("Welcome to the Video Conferencing App API!");
+});
 
 // Start server
 const start = async () => {
