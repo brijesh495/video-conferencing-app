@@ -27,9 +27,9 @@ app.use("/api/v1/users", userRoutes);
 // Start server
 const start = async () => {
   try {
-    console.log("ENV CHECK:", process.env.MONGO_URL); // debug
+    console.log("ENV CHECK:", process.env.MONGO_URI); // debug
 
-    const connectionDB = await mongoose.connect(process.env.MONGO_URL);
+    const connectionDB = await mongoose.connect(process.env.MONGO_URI);
 
     console.log(`✅ MONGO Connected: ${connectionDB.connection.host}`);
 
