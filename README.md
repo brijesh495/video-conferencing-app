@@ -3,7 +3,10 @@
 A full-stack video conferencing web application with real-time peer-to-peer video/audio calling, built using WebRTC and Socket.io.
 
 ## 🔗 Live Demo
-👉 [Click here to open app](https://video-conferencing-app-1-uqdm.onrender.com/)
+👉 ## 🔗 Live Demo
+- 🎥 [Frontend](https://video-conferencing-app-rose-rho.vercel.app)
+- ⚙️ [Backend](https://video-conferencing-app-1-uqdm.onrender.com)
+
 
 ## 🛠️ Tech Stack
 - **Frontend:** React.js
