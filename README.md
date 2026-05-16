@@ -3,16 +3,14 @@
 A full-stack video conferencing web application with real-time peer-to-peer video/audio calling, built using WebRTC and Socket.io.
 
 ## 🔗 Live Demo
-👉 ## 🔗 Live Demo
 - 🎥 [Frontend](https://video-conferencing-app-rose-rho.vercel.app)
 - ⚙️ [Backend](https://video-conferencing-app-1-uqdm.onrender.com)
-
 
 ## 🛠️ Tech Stack
 - **Frontend:** React.js
 - **Backend:** Node.js, Express.js
 - **Real-time:** WebRTC, Socket.io
-- **Authentication:** JWT (JSON Web Tokens)
+- **Authentication:** JWT
 - **Database:** MongoDB Atlas
 
 ## ✨ Features
@@ -23,26 +21,14 @@ A full-stack video conferencing web application with real-time peer-to-peer vide
 - Camera & microphone controls
 
 ## ⚙️ Installation
-```bash
-# Clone the repo
-git clone https://github.com/brijesh495/video-conferencing-app.git
-
-# Backend setup
-cd backend
-npm install
-npm start
-
-# Frontend setup
-cd frontend
-npm install
-npm start
+- Clone: git clone https://github.com/brijesh495/video-conferencing-app.git
+- Backend: cd backend → npm install → npm start
+- Frontend: cd frontend → npm install → npm start
 
 ## 🔐 Environment Variables
-Create `.env` in backend:
-
-MONGO_URI=your_mongodb_url
-JWT_SECRET=your_secret_key
-PORT=5000
+- MONGO_URI=your_mongodb_url
+- JWT_SECRET=your_secret_key
+- PORT=5000
 
 ## 👨‍💻 Author
-**Brijesh Maurya** — [GitHub](https://github.com/brijesh495) | [LinkedIn](https://linkedin.com/in/brijesh-maurya-3762b72a3)
+Brijesh Maurya — GitHub: https://github.com/brijesh495
